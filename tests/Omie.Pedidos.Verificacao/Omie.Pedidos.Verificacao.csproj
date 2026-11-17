@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Console de verificação: sem pacote de teste externo. "dotnet run" sai com código 0 se tudo passar. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Omie.Pedidos\Omie.Pedidos.csproj" />
+  </ItemGroup>
+
+</Project>
