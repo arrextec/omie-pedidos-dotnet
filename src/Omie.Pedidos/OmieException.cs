@@ -9,8 +9,9 @@ public enum OmieErroTipo
     Api,
 
     /// <summary>
-    /// A API foi bloqueada por consumo indevido (chamadas repetidas). O bloqueio dura em torno de 25 minutos e
-    /// cada nova chamada o estende: pare e tente mais tarde. Nunca é repetido automaticamente.
+    /// A API foi bloqueada por consumo indevido. Pela documentação da Omie, na 10ª requisição com erro para o mesmo
+    /// IP + App Key + método, o bloqueio dura 30 minutos (HTTP 425): pare e tente mais tarde. Nunca é repetido
+    /// automaticamente.
     /// </summary>
     Bloqueio,
 
